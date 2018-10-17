@@ -1,8 +1,9 @@
+
 body{
     background:url(smoke.png) no-repeat;
     background-size:52%;
     background-position:center;
-    background-position:330px 365px;
+    background-position:330px 100px;
     }
 
 circle {
@@ -69,4 +70,19 @@ body {
 body,
 html {
     height: 100%;
+}
+.bob{
+    width: 300px;
+    height: 520px;
+    display: block;
+    background-image: url(finalbob-01.png);
+    animation: walk 2s steps(14) infinite;
+
+    }
+
+@keyframes walk{
+    to{
+        background-position: -4201px;
+    }
+
 }
