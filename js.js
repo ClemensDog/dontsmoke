@@ -5,7 +5,6 @@ var total = 158,
 
 var countries = {
     "Japan (30kr)": 40,
-    "Italy (38 kr)": 22,
     "USA (40kr)": 21,
     "Denmark (44kr)": 20,
     "UK (110kr)": 9,

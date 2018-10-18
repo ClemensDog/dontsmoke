@@ -1,9 +1,9 @@
 
 body{
-    background:url(smoke.png) no-repeat;
-    background-size:750px;
+    background:url(smoke2.png) no-repeat;
+    background-size:700px;
     background-position:center;
-     background-position:360px 10px;
+     background-position:20px -190px;
     }
 
 circle {
@@ -24,16 +24,16 @@ svg {
 }
 
 .buttons {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 button {
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 90%;
     cursor: pointe;
     -webkit-appearance: none;
     border: none;
-    margin-right: 5px;
+    margin-right: 2px;
     background-color: transparent;
     padding: 5px 10px;
     outline: none;
