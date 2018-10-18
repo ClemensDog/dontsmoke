@@ -3,30 +3,30 @@ var total = 158,
     pie = document.querySelector('.pie'),
     activeClass = 'active';
 
-var continents = {
+var countries = {
     "Japan (30kr)": 40,
-    "Italia (38 kr)": 22,
+    "Italy (38 kr)": 22,
     "USA (40kr)": 21,
     "Denmark (44kr)": 20,
     "UK (110kr)": 9,
     "Australia (140kr)": 12
 };
 
-// work out percentage as a result of total
+
 var numberFixer = function (num) {
     var result = ((num * total) / 100);
     return result;
 }
 
-// create a button for each country
-for (property in continents) {
+
+for (property in countries) {
     var newEl = document.createElement('button');
     newEl.innerText = property;
     newEl.setAttribute('data-name', property);
     buttons.appendChild(newEl);
 }
 
-// when you click a button setPieChart and setActiveClass
+
 buttons.addEventListener('click', function (e) {
     if (e.target != e.currentTarget) {
         var el = e.target,
@@ -38,7 +38,7 @@ buttons.addEventListener('click', function (e) {
 });
 
 var setPieChart = function (name) {
-    var number = continents[name],
+    var number = countries[name],
         fixedNumber = numberFixer(number),
         result = fixedNumber + ' ' + total;
 
@@ -52,6 +52,6 @@ var setActiveClass = function (el) {
     }
 }
 
-// Set up default settings
+
 setPieChart('asia');
 setActiveClass(buttons.children[0]);
